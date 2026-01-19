@@ -200,8 +200,8 @@ export default function FormSection({ formik, onLoadLog }: FormSectionProps) {
     }, [values.startTime, values.endTime, setFieldValue]);
 
     return (
-        <div className="max-h-screen h-screen overflow-auto flex flex-col bg-white dark:bg-[rgb(10,10,10)] [@media(min-width:1500px)]:rounded-lg [@media(min-width:1500px)]:border border-gray-200 dark:border-[rgb(30,30,30)] shadow-sm">
-            <div className="flex-1 overflow-auto">
+        <div className="[@media(max-width:1500px)]:max-h-screen [@media(max-width:1500px)]:h-screen overflow-auto flex flex-col bg-white dark:bg-[rgb(10,10,10)] [@media(min-width:1500px)]:rounded-lg [@media(min-width:1500px)]:border border-gray-200 dark:border-[rgb(30,30,30)] shadow-sm">
+            <div className="flex-1 [@media(min-width:1500px)]:overflow-auto">
                 <div className="bg-white dark:bg-[rgb(10,10,10)] text-gray-900 dark:text-gray-100">
                     <div className="backdrop-blur-xl px-4 py-3 border-b sticky top-0 z-10 flex items-center justify-between bg-gradient-to-r from-blue-50/80 to-indigo-50/80 dark:from-[rgb(15,15,15,0.95)] dark:to-[rgb(20,20,20,0.95)] border-gray-200 dark:border-[rgb(30,30,30)]">
                         <Link
