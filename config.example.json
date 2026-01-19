@@ -1,0 +1,28 @@
+{
+    "builtInWho": ["Me", "Team Lead", "Mentor"],
+    "builtInWhere": ["Home", "Office", "Campus", "Remote"],
+    "validationOptions": [
+        { "value": "Assessor", "label": "Assessor" },
+        { "value": "Employer", "label": "Employer" },
+        { "value": "Supervisor", "label": "Supervisor" }
+    ],
+    "defaultFormValues": {
+        "model": "gemini-2.5",
+        "who": "Me",
+        "where": "Home",
+        "validatedBy": "Assessor"
+    },
+    "minDuration": 0.5,
+    "defaultUseStreaming": true,
+    "maxFileSize": 10485760,
+    "allowedFileTypes": [
+        "image/png",
+        "image/jpeg",
+        "image/jpg",
+        "image/gif",
+        "image/webp",
+        "application/pdf"
+    ],
+    "apiTimeout": 60000,
+    "exportJsonSpacing": 2
+}
